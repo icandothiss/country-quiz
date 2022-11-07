@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Country Quiz</title>
+  </head>
+  <body>
+    <h1>COUNTRY QUIZ</h1>
+    <div class="container" id="container">
+      <div id="second-container" class="second-container hide">
+        <img src="images/winners.svg" alt="" />
+        <div class="results-tryagain">
+          <p class="results">Results</p>
+          <p class="score">
+            You got <span id="score-counter">4</span> correct answers
+          </p>
+          <button id="tryagain-button" class="tryagain">Try again</button>
+        </div>
+      </div>
+      <div class="image" id="header-image">
+        <img src="images/quiz_starting.svg" alt="" />
+      </div>
+      <div id="flag-container">
+        <img
+          class="hide flag"
+          id="flag-france"
+          src="images/Flag_of_France_(1794–1815,_1830–1974,_2020–present).svg.webp"
+          alt=""
+        />
+        <img
+          class="hide flag"
+          id="flag-tunisia"
+          src="images/Flag_of_Tunisia.svg.png"
+          alt=""
+        />
+        <img
+          class="hide flag"
+          id="flag-kuala-lumpur"
+          src="images/255px-Flag_of_Kuala_Lumpur,_Malaysia.svg.png"
+          alt=""
+        />
+      </div>
+      <p class="question" id="question">Kuala Lumpur the capital of</p>
+      <div class="answers" id="answers">
+        <div class="answer">
+          <span>A</span>
+          <p class="answer-text" id="first">Vietnam</p>
+        </div>
+        <div class="answer">
+          <span>B</span>
+          <p class="answer-text" id="second">Malaysia</p>
+        </div>
+        <div class="answer">
+          <span>C</span>
+          <p class="answer-text" id="third">Sweden</p>
+        </div>
+        <div class="answer">
+          <span>D</span>
+          <p class="answer-text" id="fourth">Austria</p>
+        </div>
+      </div>
+      <button id="next-button" class="hide">Next</button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
